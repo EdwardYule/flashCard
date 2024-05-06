@@ -1,4 +1,4 @@
-# flash-card
+# sokki
 
 ## Project setup
 ```
