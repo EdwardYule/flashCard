@@ -1,22 +1,20 @@
 <template>
   <div class="home">
-    <Card>
-      <template v-slot:front>
-        front
-      </template>
-      <template v-slot:back>
-        back
-      </template>
-    </Card>
+    <CardGroup :cards="cards" />
   </div>
 </template>
 
 <script>
-import Card from "@/components/Card.vue";
+import CardGroup from "@/components/Card/CardGroup.vue";
 export default {
   name: 'HomeView',
   components: {
-    Card,
+    CardGroup,
+  },
+  data(){
+    return {
+      cards: [],
+    }
   }
 }
 </script>

@@ -26,6 +26,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$padding: 16px;
 .card {
   perspective: 1000px;
   width: 320px;
@@ -33,23 +34,27 @@ export default {
   transition: 0.6s;
   transform-style: preserve-3d;
   position: relative;
+  box-shadow: 0 0 10px gray;
+  cursor: pointer;
+  padding: $padding;
+  box-sizing: border-box;
+  user-select: none;
   &.flip{
     transform: rotateY(180deg);
   }
   .front,.back {
-    width: 100%;
-    height: 100%;
+    width: calc(100% - $padding * 2);
+    height: calc(100% - $padding * 2);
     backface-visibility: hidden;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: $padding;
+    left: $padding;
+    background-color: lightcyan;
   }
   .front{
-    background-color: lightblue;
     z-index: 1;
   }
   .back{
-    background-color: lightcoral;
     transform: rotateY(180deg);
   }
 }
