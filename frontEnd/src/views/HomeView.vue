@@ -13,7 +13,12 @@ export default {
   },
   data(){
     return {
-      cards: [],
+      cards: [
+        {},
+        {},
+        {},
+        {},
+      ],
     }
   }
 }

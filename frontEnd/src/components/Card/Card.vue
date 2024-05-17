@@ -35,6 +35,7 @@ $padding: 16px;
   transform-style: preserve-3d;
   position: relative;
   box-shadow: 0 0 10px gray;
+  background-color: white;
   cursor: pointer;
   padding: $padding;
   box-sizing: border-box;
