@@ -1,19 +1,10 @@
-# sokki
+开发计划
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+先做一个原型
+需要实现的功能有：
+1. 卡片的翻转，左滑右滑，表示上一张和下一张
+2. 在卡片正反面显示内容
+3. 用什么办法来表示记住没记住呢？
+4. 打开网页后，先不需要登录。直接进入功能，纯前端项目，数据记录在前端。
+5. 卡片的数据从哪里来？应该是需要支持用户自己制卡的。这个需要研究一下ankki，研究一下业内通用标准协议是什么，然后以后才能对接
+6. 想办法把业内标准渲染出来
