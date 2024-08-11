@@ -2,6 +2,7 @@ export default {
   install(Vue){
     Vue.directive('draggable', {
       inserted(el){
+        return;
         // 在这里实现拖拽的功能
         // 鼠标按下的时候，应该先记住当前的位置
         // 然后在鼠标移动的时候，让元素跟着做相应的位移
